@@ -1,131 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Magic Trick</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  .top-container {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+  }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+  .header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+  }
 
-  <!-- Bootstrap css -->
-  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  .content {
+    padding: 16px;
+  }
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+
+  .sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    /*top: 20px;*/
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    color: #064579;
+  }
+
+  .main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+</style>
 </head>
-
 <body>
 
-  <header id="header" class="header header-hide">
-    <div class="container">
-
-      <div id="logo" class="pull-left">
-        <h1><a href="index.html" class="scrollto"><span>Magic</span>Trick</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
-      </div>
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html">Home</a></li>
-          <li><a href="Mantra_sangrah.html">मंत्र संग्रह </a>
-           
-          </li>
-          <li><a href="shabar_mantra.html">शाबर  मंत्र</a></li>
-          <li><a href="vanshikaran_mantra.html">वंशीकरण मंत्र </a></li>
-          <li><a href="kalajadu.html">काला जादू </a></li>
-          <li><a href="Indra_jaal.html">इंद्रा जाल</a></li>
-          <li><a href="index.html#contact">गुरु जी संपर्क</a></li>
-          <li><a href="lib.html">Library</a></li>
-
-          <li><a href="index.html#blog">| Blog |</a></li>
-          <li><a href="index.html#about-us">| About |</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
+  <div class="header" id="myHeader">
+    <div class="navbar">
+            <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+            <!-- 
+            <a href="#two"><i class="fa fa-fw fa-search"></i> Search</a> 
+            <a href="#three"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+            <a href="#four"><i class="fa fa-fw fa-user"></i> Login</a>
+            <a href="#five"><i class="fa fa-fw fa-user"></i> five</a>
+             -->
+            <a href="shabar_mantra.html">शाबर  मंत्र</a>
+            <a href="vanshikaran_mantra.html">वंशीकरण मंत्र </a>
+            <a href="kalajadu.html">काला जादू </a>
+            <a href="Indra_jaal.html">इंद्रा जाल</a>
+            <a href="#contact">गुरु जी संपर्क</a>
+            <a href="lib.html">Library</a>
+            <a href="#about-us">About</a>
     </div>
-  </header><!-- #header -->
+  </div>
 
- 
-
-  <!--==========================Footer============================-->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-12 col-lg-4">
-          <div class="footer-logo">
-
-            <a class="navbar-brand" href="#">Magic Trick</a>
-            
-
-          </div>
-        </div>
-
-        <div class="col-sm-8 col-md-4 col-lg-2">
-          <div class="list-menu">
-
-            <h4>About Us</h4>
-
-            <ul class="list-unstyled">
-              <li><a href="#">About us</a></li>
-            </ul>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="copyrights">
-      <div class="container">
-        <p>&copy; Copyrights eStartup. All rights reserved.</p>
-        <div class="credits">
-          <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eStartup
+  <div class="content container" id="one">
+    <div class="row">
+        <div class="col-md-4 col-sm-1 sidenav">
+          <a href="#about">About 1</a>
+          <a href="#services">Services</a>
+          <a href="#clients">Clients</a>
+          <a href="#contact">Contact</a>
+          <!--  
+          <a href="shabar_mantra.html">शाबर  मंत्र</a>
+          <a href="vanshikaran_mantra.html">वंशीकरण मंत्र </a>
+          <a href="kalajadu.html">काला जादू </a>
+          <a href="Indra_jaal.html">इंद्रा जाल</a>
+          <a href="#contact">गुरु जी संपर्क</a>
+          <a href="lib.html">Library</a>
+          <a href="#blog">| Blog |</a>
+          <a href="#about-us">| About |</a>
           -->
-          Designed by <a href="https://dysonspheretech.github.io">DysonSphereTech</a>
         </div>
-      </div>
+       <div class="col-md-8 col-sm-11 main">
+        <h1>vanshikaran_mantra</h1>
+          
+          <div id="clinets">
+            <h1>clinets</h1>
+          </div>
+          <h2>home</h2>
+          <p>This sidebar is as tall as its content (the links), and is always shown.</p>
+          <p>Scroll down the page to see the result.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <div id="about">
+            <h1>about</h1>
+          </div>
+
+
+          <p> kljlkjklSome text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <div id="services">
+            <h1>services</h1>
+          </div>
+          <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.</p>
+          <div id="1">
+          <a href="#section5"><h3><u>गणेश साबर मंत्र :-></u></h3></a>
+  <div class="link1">
+      <img style="height: 192px;width: 173px;" class="img-responsive"src="img/shabar_mantra/Ganesh_ji.jpg" class="img-rounded" alt="shree Ganesh">
+        <h2>
+           <u>विधि :-</u>
+        </h2>
+        <ul>
+                <li><b>हर रोज गुरु पूजन और गणेश पूजन करे!</li>
+                <li><b>इस मन्त्र की हररोज 5 माला जाप करे !</li>
+                <li><b>गणेश जी की मूर्ती के दोनों तरफ एक एक गोमती चक्र रखे!</li>
+                <li><b>उन्हें देवी रिद्धि और सिद्धि मानकर उनका भी पूजन करे! </li>
+                <li><b>मूर्ती अगर कुम्हार के घर की मिटटी से बनाये तो ज्यादा अच्छा है नहीं तो बाज़ार से भी लाकर रख सकते है </li>
+                <li><b>या पारे के गणेश जी भी रख सकते है!</li>
+                <li><b>जप रात को करे 21 दिन की क्रिया है!</li>
+                <li><b>अंतिम दिन पांच लड़ू और मीठा सिंधूर गणेश जी के
+                मंदिर में चढ़ाये और देवी रिद्धि सिद्धि के लिए श्रृंगार का सामान मंदिर में चढ़ाये!</li>
+        </ul>
+        
+                  <h3>
+                    <u>मंत्र :-</u>
+                  </h3>
+                <p style="color:#E61005"> "" ॐ गणपति यहाँ पठाऊ तहां जावो<br/>
+                     <b> दस कोस आगे जा <br/>
+                    ढाई कोस पीछे जा<br/>
+                  दस कोस सज्जे दस कोस खब्बे<br/>
+                  मैया गुफ्फा की आज्ञा मन रिद्धि सिद्धि देवी आन <br/>
+                  अगर सगर जो न आवे तो माता पारवती की लाज!<br/>
+                  ॐ क्राम फट स्वाहा! ""
+                </p>
+      </div> 
+
+          </div>
+
+        </div> 
+    </div> 
+  </div>
+  <div class="content" id="two">
+    <div class="sidenav">
+      <a href="#about">About ewrfwe</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
     </div>
 
-  </footer>
+    <div class="main">
+      <h2>Auto Sidebar</h2>
+      <p>This sidebar is as tall as its content (the links), and is always shown.</p>
+      <p>Scroll down the page to see the result.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div>  
+  </div>
+  <div class="content" id="three">
+    <div class="sidenav">
+      <a href="#about">About 3 retgsrtwtewrfwe</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </div>
 
+    <div class="main">
 
+      <h2>Auto Sidebar</h2>
+      <p>This sidebar is as tall as its content (the links), and is always shown.</p>
+      <p>Scroll down the page to see the result.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div>  
+  </div>  
+  <div class="content" id="four">
+    <div class="sidenav">
+      <a href="#about">About ewrfwe</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div class="main">
+      <h2>Auto Sidebar</h2>
+      <p>This sidebar is as tall as its content (the links), and is always shown.</p>
+      <p>Scroll down the page to see the result.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div>  
+  </div>  
+  <div class="content" id="five">
+    <div class="sidenav">
+      <a href="#about">About ewrfwe</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-  <!-- ==========JavaScript Libraries=================== -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/modal-video/js/modal-video.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <!--=================== Contact Form JavaScript File==================== -->
-  <script src="contactform/contactform.js"></script>
+    <div class="main">
+      <h2>Auto Sidebar</h2>
+      <p>This sidebar is as tall as its content (the links), and is always shown.</p>
+      <p>Scroll down the page to see the result.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div>  
+  </div>
 
-  <!--================= Template Main Javascript File================== -->
-  <script src="js/main.js"></script>
+  <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
 
 </body>
 </html>
